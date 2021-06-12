@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <title>Escobedo Seguros S.A. Contacto</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+  <header>
+    <nav id="headerGrid">
+        <ul id="ulNav">
+          <li id="linkImgPos"><img src="../images/logo.png" alt="Logo Aseguradora" id="logo"></li>
+          <li id="link"><a href="../index.html">Inicio</a></li>
+          <li id="link"><a href="servicios.html">Servicios</a></li>
+          <li id="link"><a href="planes.html">Planes</a></li>
+          <li id="link"><a href="faq.html">Preguntas Frecuentes</a></li>
+          <li id="link"><a href="contactenos.html"><input type="button" value="Contáctenos" class="botonHeader"></a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <!--Titulo de esta sección-->
+    <h1 class="titulosH1">No corra riesgos, comuniquese con nosotros hoy mismo llenando este formulario</h1>
+    <br>
+    <!--Formulario para que el usuario se contacte con nosotros-->
+    <div id="formulario">
+    <form action="#" method="POST">
+     <fieldset>
+      <legend>Sus datos y plan</legend>
+        <label for="nombreCompleto">Nombre y Apellido</label>
+        <input type="text" id="nombreCompleto" placeholder="Ingrese su nombre">
+        <br>
+        <label for="Servicio">Servicio</label>
+        <Select id="Servicio">
+          <option value="vida">Seguro de vida</option>
+          <option value="negocio">Seguro para negocio</option>
+          <option value="incendio">Seguro contra incendio</option>
+          <option value="hogar">Seguro para hogar</option>
+        </Select>
+        <br>
+        <label for="Plan">Plan</label>
+        <Select id="Plan">
+          <option value="Plan Total">Plan Total</option>
+          <option value="Plan Parcial">Plan Hogar</option>
+          <option value="Plan Mixto">Plan Personalizado</option>
+        </Select>
+        <br>
+        <label for="mail">Mail de contacto</label>
+        <input type="text" id="mail" placeholder="ejemplo@ejemplo.com">
+        <br>
+        <label for="telefono">Número de celular</label>
+        <input type="number" id="telefono" placeholder="Incluya Código de area">
+        <br>
+     </fieldset>    
+        <fieldset class="radio">
+         <legend>Por favor, indique su género</legend>
+	       Femenino: <input type="radio" name="sexo"/>
+         <br>
+	       Masculino: <input type="radio" name="sexo"/>
+         <br>
+         No binario: <input type="radio" name="sexo"/>
+         <br>
+         Otro: <input type="radio" name="sexo"/>
+        </fieldset>
+        <br>
+        <p>Ingrese su consulta o solicitud de manera detallada</p>
+        <textarea name="consulta" id="consultaUsuario" placeholder="Máximo 500 caracteres"></textarea>
+        <br>
+        <div class=botones>
+        <input type="submit" value="Enviar formulario">
+        <br>
+        <input type="reset" value="Reiniciar formulario">
+        </div>
+    </form>
+    </div>
+  </main>
+  <footer>
+    <nav id="navFooter">
+      <img src="../images/instagram.png" alt="Instagram de la empresa" class="ig">
+      <img src="../images/facebook.png" alt="Facebook de la empresa" class="fb">
+      <img src="../images/twitter.png" alt="Twitter de la empresa"  class="tw">
+      <p class="copyright">©Copyright Suárez César design.</p>
+    </nav>
+</footer>
+</body>
+</html>
