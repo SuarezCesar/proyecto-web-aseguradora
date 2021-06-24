@@ -4,67 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Farro:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
-    <title>Escobedo Seguros S.A.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <title>Escobedo Seguros S.A.</title>
 </head>
 <body>
-  <!--Header nuevo FLEX, se clona y corrige en las páginas internas-->
-    <header>
-        <nav id="headerGrid">
-            <ul id="ulNav">
-              <li id="linkImgPos"><img src="images/logo.png" alt="Logo Aseguradora" id="logo"></li>
-              <li id="link"><a href="index.html">Inicio</a></li>
-              <li id="link"><a href="internas/servicios.html">Servicios</a></li>
-              <li id="link"><a href="internas/planes.html">Planes</a></li>
-              <li id="link"><a href="internas/faq.html">Preguntas Frecuentes</a></li>
-              <li id="link"><a href="internas/contactenos.html"><input type="button" value="Contáctenos" class="botonHeader"></a></li>
-            </ul>
-        </nav>
-    </header>
-    <h1 class="titulosH1">Nosotros trabajamos día y noche para que vos vivas más tranquilo</h1>
-    <!--Cuerpo principal del sitio en grid-->
-    <div id="grid">
-      <div id=divIzq1>
-        <img src="images/home_1.jpeg" alt="profesional de seguros" class="imgHome">
-      </div>
-      <div id=divDer1>
-        <p class="pHome">En Escobedo Seguros S.A. sabemos lo que te preocupa: queremos que llegues a tu casa, sientas tranquilidad y que todo está seguro y bajo control. 
-          Somos un grupo de expertos en el área de seguros y queremos llevar seguridad a tu vida: que tu familia, tus bienes y tu integridad estén protegidos. Contamos con una amplia gama de seguros para que puedas salir sin preocuparte, siempre vas a poder contar con nosotros ante cualquier eventualidad. Somos lideres en el marcado de seguros y nos expandimos día a día para traerte los mejores servicios. Te invitamos a que conozcas nuestras oficinas localizadas en el centro de la ciudad o a que te comuniques e informes con nosotros mediante nuestra web.
-        </p>
-        <br>
-        <a href="internas/contactenos.html"><input type="button" value="Contáctenos ahora" class="botonHeader"></a>
-      </div>
-      <div id=divIzq2>
-        <ul class="listaDatos">
-          <li>Av. Calle 1234</li>
-          <li>+54-9-11-50403020</li>
-          <li>escobedoseguros@proveedor.com</li>
-        </ul>
-      </div>
-      <div id=divDer2>
-        <h3 class="tituloClientes">Clientes que confían en nosotros</h3>
-      </div>
-      <div id=divIzq3>
-        <img src="images/direccion.jpg" alt="Mapa de la localización de la sede central" class="mapaDireccion">
-      </div>
-      <div id=divDer3>
-        <img src="images/empresa1.png" alt="Logo empresa 1" class="formatoLogos">
-        <img src="images/empresa2.png" alt="Logo empresa 2" class="formatoLogos">
-        <img src="images/empresa3.png" alt="Logo empresa 3" class="formatoLogos">
-        <img src="images/empresa4.png" alt="Logo empresa 4" class="formatoLogos">
-        <img src="images/empresa5.png" alt="Logo empresa 5" class="formatoLogos">
-      </div>
-    </div>
-    <!--Footer ahora construido en flex, clonado en las páginas internas-->
-    <footer>
-      <nav id="navFooter">
-        <img src="images/instagram.png" alt="Instagram de la empresa" class="ig">
-        <img src="images/facebook.png" alt="Facebook de la empresa" class="fb">
-        <img src="images/twitter.png" alt="Twitter de la empresa"  class="tw">
-        <p class="copyright">©Copyright Suárez César design.</p>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-responsive logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              <a class="nav-link" href="internas/servicios.html">Servicios</a>
+              <a class="nav-link" href="internas/planes.html">Planes</a>
+              <a class="nav-link" href="internas/faq.html">Preguntas frecuentes</a>
+              <a class="nav-link" href="internas/contactenos.html">Contáctenos</a>
+            </div>
+          </div>
+        </div>
       </nav>
-  </footer>
+      </header>
+      <h1 class="text-center">Nosotros trabajamos día y noche para que vos vivas más tranquilo</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col bg-primary">
+            <img src="images/home_1.jpeg" class="img-fluid imgHomeB" alt="profesional de seguros">
+          </div>
+          <div class="col-9 bg-primary text-white fw-bold mainText">
+            En Escobedo Seguros S.A. sabemos lo que te preocupa: queremos que llegues a tu casa, sientas tranquilidad y que todo está seguro y bajo control. 
+          Somos un grupo de expertos en el área de seguros y queremos llevar seguridad a tu vida: que tu familia, tus bienes y tu integridad estén protegidos. Contamos con una amplia gama de seguros para que puedas salir sin preocuparte, siempre vas a poder contar con nosotros ante cualquier eventualidad. Somos lideres en el marcado de seguros y nos expandimos día a día para traerte los mejores servicios. Te invitamos a que conozcas nuestras oficinas localizadas en el centro de la ciudad o a que te comuniques e informes con nosotros mediante nuestra web.
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="p-3 border">
+              <ul class="list-group list-group-flush fw-bold text-center listaB order-sm-2">
+                <li class="list-group-item">Av. Calle 1234</li>
+                <li class="list-group-item">+54-9-11-50403020</li>
+                <li class="list-group-item">escobedoseguros@proveedor.com</li>
+              </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3 border posH3">
+                <h3 class="text-center">Clientes que confían en nosotros</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8459965833104!2d-58.37246648440456!3d-34.608055580458355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352cbe276f75%3A0xe16921ef0545f86d!2sCasa%20Rosada!5e0!3m2!1ses-419!2sar!4v1624502671197!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>      
+              </div>
+              <div class="col">
+                <div id="carouselExampleIndicators" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="images/empresa2.png" class="d-block w-100" alt="Empresa2">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/empresa3.png" class="d-block w-100" alt="Empresa3">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/empresa4.png" class="d-block w-100" alt="Empresa4">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/empresa5.png" class="d-block w-100" alt="Empresa5">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+        </div>
+      </div>
+      <footer>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-responsive logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ms-auto">
+                <a class="nav-link active" aria-current="page" href="#"><img src="images/instagram.png" alt="Instagram de la empresa" class="ig"></a>
+                <a class="nav-link" href="#"><img src="images/facebook.png" alt="Facebook de la empresa" class="fb"></a>
+                <a class="nav-link" href="#"><img src="images/twitter.png" alt="Twitter de la empresa"  class="tw"></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

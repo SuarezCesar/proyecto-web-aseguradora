@@ -32,7 +32,7 @@ body {
   font-size: 18px;
 }
 
-/*Headear*/
+/*Header*/
 
 #ulNav{
   display:flex;
@@ -434,4 +434,27 @@ font-size: 20px;
 #contentSer4{
   background-color: #11487D;
 }
-/*Media queries*/
+
+/*Index con bootstrap*/
+.navbar-brand{
+  margin: 0;
+  padding: 0;
+}
+
+.logo{
+  height: 50px;
+  width: 100px;
+}
+
+.imgHomeB{
+  height: 300px;
+  width: 300px;
+}
+
+.mainText{
+  padding-top: 70px;
+}
+
+.posH3{
+margin-top:40px;
+}
