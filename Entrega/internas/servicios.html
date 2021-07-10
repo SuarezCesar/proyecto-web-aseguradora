@@ -7,77 +7,113 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Escobedo Seguros S.A. Servicios</title>
     <link rel="stylesheet" href="../css/style.css"/>
 </head>
 <body>
   <header>
-    <nav id="headerGrid">
-        <ul id="ulNav">
-          <li id="linkImgPos"><img src="../images/logo.png" alt="Logo Aseguradora" id="logo"></li>
-          <li id="link"><a href="../index.html">Inicio</a></li>
-          <li id="link"><a href="servicios.html">Servicios</a></li>
-          <li id="link"><a href="planes.html">Planes</a></li>
-          <li id="link"><a href="faq.html">Preguntas Frecuentes</a></li>
-          <li id="link"><a href="contactenos.html"><input type="button" value="Contáctenos" class="botonHeader"></a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand"><img src="../images/logo.png" class="img-responsive logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            <a class="nav-link" href="servicios.html">Servicios</a>
+            <a class="nav-link" href="planes.html">Planes</a>
+            <a class="nav-link" href="faq.html">Preguntas frecuentes</a>
+            <a class="nav-link" href="contactenos.html">Contáctenos</a>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
-  <body>
-    <!--Titulo de la página de servicios-->
-    <h1 class="titulosH1">Conocé los seguros que podés contratar en nuestra empresa</h1>
-    <!--Secciones que detallan minimamente cada seguro para generar interés acompañado de una imagen, hice 4 porque hay más de 90 tipos de seguros-->
-    <div id="serviciosGrid">
-      <div id="contenedor1"><img src="../images/seguro_de_vida.jpeg" alt="seguro de vida" id="imgSer1"></div>
-      <div id="contentSer1">
-        <ul class="ulServicios">
-            <li>La vida es para vivirla, disfrutarla al máximo y sin preocupaciones.</li>
-            <li>Nuestro seguro de vida te trae a vos y a tu familia máxima tranquilidad.</li>
-            <li>Protección total contra todo tipo de accidentes y enfermedades.</li>
-            <li>Con un simple estudio medico ya podés acceder a esta póliza sin inconvenientes.</li>
-            <li>Cubre costos de sepelio y asistencia psicologica por 1 año.</li>
-        </ul> 
-     </div>
-      <div id="contenedor2"> <img src="../images/seguro_negocio.jpeg" alt="seguro de vida" id="imgSer2"></div>
-      <div id="contentSer2"> 
-        <ul class="ulServicios">
-            <li>Lo único que tiene que estar en tu mente y la de tus socios es prosperar.</li>
-            <li>Con esta póliza vas a poder cubrir parcialmente los bienes a la venta o la caja.</li>
-            <li>También podés optar por la protección total antirobo y contra incendios.</li>
-            <li>Nuestra poliza de negocio cubre arreglos de gas, agua, internet y electricidad.</li>
-            <li>¿Tus clientes son un poco torpes? Podés asegurar tu mercaderia al costo.</li>
-            <li>En caso de que tu negocio esté en problemas podés modificar tu póliza tras cada vencimiento.</li>
-        </ul>
+  <!--Titulo de la página de servicios-->
+  <h1 class="titulosH1">Conocé los seguros que podés contratar en nuestra empresa</h1>
+  <!--Secciones que detallan minimamente cada seguro para generar interés acompañado de una imagen, hay 4 porque hay más de 90 tipos de seguros en un proyecto más grande esto deberia reemplazarse por una página que deje buscar seguros en particular con toda la info cargada y entiendo que esto implica el uso de javascript-->
+  <div class="container-sm">
+        <div class="row g-0">
+          <div class="col-4">
+            <img src="../images/seguro_de_vida.jpeg" class="img-responsive imgSer1" alt="Seguro de vida">
+          </div>
+          <div class="col-8 bg-primary text-white fw-bold mainText">
+            <ul class="ulServicios">
+                <p class="tituloSeguro">Seguro de vida</p>
+                <li>La vida es para vivirla, disfrutarla al máximo y sin preocupaciones.</li>
+                <li>Nuestro seguro de vida te trae a vos y a tu familia máxima tranquilidad.</li>
+                <li>Protección total contra todo tipo de accidentes y enfermedades.</li>
+                <li>Con un simple estudio medico ya podés acceder a esta póliza sin inconvenientes.</li>
+                <li>Cubre costos de sepelio y asistencia psicologica por 1 año.</li>
+            </ul> 
+          </div>
+          </div>
+          <div class="row g-0">
+            <div class="col-4">
+              <img src="../images/seguro_negocio.jpeg" class="img-responsive imgSer1" alt="Seguro de negocio">
+            </div>
+            <div class="col-8 bg-info text-white fw-bold mainText">
+                <ul class="ulServicios">
+                  <p class="tituloSeguro">Seguro de negocio o local</p>
+                <li>Lo único que tiene que estar en tu mente y la de tus socios es prosperar.</li>
+                <li>Con esta póliza vas a poder cubrir parcialmente los bienes a la venta o la caja.</li>
+                <li>También podés optar por la protección total antirobo y contra incendios.</li>
+                <li>Nuestra poliza de negocio cubre arreglos de gas, agua, internet y electricidad.</li>
+                <li>¿Tus clientes son un poco torpes? Podés asegurar tu mercaderia al costo.</li>
+                <li>En caso de que tu negocio esté en problemas podés modificar tu póliza tras cada vencimiento.</li>
+                </ul>
+            </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-4">
+                  <img src="../images/seguro_hogar.jpeg" class="img-responsive imgSer1" alt="Seguro de hogar">
+                </div>
+                <div class="col-8 bg-primary text-white fw-bold mainText">
+                    <ul class="ulServicios">
+                      <p class="tituloSeguro">Seguro de hogar</p>
+                        <li>Tu hogar es tuyo y de los tuyos y debe ser protegido.</li>
+                        <li>Podés optar por la combinación de pólizas antirobo, contra incendios, contradestrucción, vandalismo, etc.</li>
+                        <li>Además, si sufrís un problema de robo en tu casa con o sin violencia te indemnizamos un 150%.</li>
+                        <li>Si tenés hijos y tienen un accidente en casa comprobable, tu seguro te respalda.</li>
+                        <li>Además, contás con un seguro de desempleo por 3 meses para todos aquellos registrados en la póliza.</li>
+                    </ul>
+                </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-4">
+                      <img src="../images/seguro_incendio.jpeg" class="img-responsive imgSer1" alt="Seguro de incendio">
+                    </div>
+                    <div class="col-8 bg-info text-white fw-bold mainText">
+                        <ul class="ulServicios">
+                          <p class="tituloSeguro">Seguro contra incendio</p>
+                            <li>No hay nada peor que un imprevisto de las magnitudes de un incendio.</li>
+                            <li>Nuestros seguros cubren casas, depositos, negocios y más.</li>
+                            <li>En base a las circunstancias del incendio nuestra poliza puede llegar a cubrir hasta 200% del costo.</li>
+                            <li>En el caso de ocurrir fatalidades nuestro seguro de incendio puede ser combinado con protección al trabajador o dueño.</li>
+                            <li>Una vez cobrada la póliza la misma sigue en validez siempre y cuando los fondos se destinen a reconstrucción.</li>
+                          </ul>   
+                    </div>
+                    </div>
+  </div>
+  <footer>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand"><img src="../images/logo.png" class="img-responsive logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="#"><img src="../images/instagram.png" alt="Instagram de la empresa" class="ig"></a>
+            <a class="nav-link" href="#"><img src="../images/facebook.png" alt="Facebook de la empresa" class="fb"></a>
+            <a class="nav-link" href="#"><img src="../images/twitter.png" alt="Twitter de la empresa"  class="tw"></a>
+          </div>
+        </div>
       </div>
-      <div id="contenedor3"><img src="../images/seguro_hogar.jpeg" alt="seguro de vida" id="imgSer3"> </div>
-      <div id="contentSer3"> 
-        <ul class="ulServicios">
-            <li>Tu hogar es tuyo y de los tuyos y debe ser protegido.</li>
-            <li>Podés optar por la combinación de pólizas antirobo, contra incendios, contradestrucción, vandalismo, etc.</li>
-            <li>Además, si sufrís un problema de robo en tu casa con o sin violencia te indemnizamos un 150%.</li>
-            <li>Si tenés hijos y tienen un accidente en casa comprobable, tu seguro te respalda.</li>
-            <li>Además, contás con un seguro de desempleo por 3 meses para todos aquellos registrados en la póliza.</li>
-        </ul>
-      </div>
-      <div id="contenedor4"><img src="../images/seguro_incendio.jpeg" alt="seguro de vida" id="imgSer4"></div>
-      <div id="contentSer4">
-        <ul class="ulServicios">
-            <li>No hay nada peor que un imprevisto de las magnitudes de un incendio.</li>
-            <li>Nuestros seguros cubren casas, depositos, negocios y más.</li>
-            <li>En base a las circunstancias del incendio nuestra poliza puede llegar a cubrir hasta 200% del costo.</li>
-            <li>En el caso de ocurrir fatalidades nuestro seguro de incendio puede ser combinado con protección al trabajador o dueño.</li>
-            <li>Una vez cobrada la póliza la misma sigue en validez siempre y cuando los fondos se destinen a reconstrucción.</li>
-          </ul>   
-      </div>
-    </div>
-    </body>
-    <footer>
-    <nav id="navFooter">
-      <img src="../images/instagram.png" alt="Instagram de la empresa" class="ig">
-      <img src="../images/facebook.png" alt="Facebook de la empresa" class="fb">
-      <img src="../images/twitter.png" alt="Twitter de la empresa"  class="tw">
-      <p class="copyright">©Copyright Suárez César design.</p>
     </nav>
-</footer>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

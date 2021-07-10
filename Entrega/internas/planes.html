@@ -5,37 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
-    <title>Escobedo Seguros S.A. Planes</title>
-    <link rel="stylesheet" href="../css/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Escobedo Seguros S.A. Servicios</title>
     <link rel="stylesheet" href="../css/style.css"/>
 </head>
 <body>
-    <header>
-        <nav id="headerGrid">
-            <ul id="ulNav">
-              <li id="linkImgPos"><img src="../images/logo.png" alt="Logo Aseguradora" id="logo"></li>
-              <li id="link"><a href="../index.html">Inicio</a></li>
-              <li id="link"><a href="servicios.html">Servicios</a></li>
-              <li id="link"><a href="planes.html">Planes</a></li>
-              <li id="link"><a href="faq.html">Preguntas Frecuentes</a></li>
-              <li id="link"><a href="contactenos.html"><input type="button" value="Contáctenos" class="botonHeader"></a></li>
-            </ul>
-        </nav>
-      </header>
-      <h1 class="titulosH1">Conozca nuestros planes</h1>
-      <div id="gridPlanes">
-        <div id="plan1">
-          <h2 class="titulosH2">PLAN TOTAL</h2>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand"><img src="../images/logo.png" class="img-responsive logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            <a class="nav-link" href="servicios.html">Servicios</a>
+            <a class="nav-link" href="planes.html">Planes</a>
+            <a class="nav-link" href="faq.html">Preguntas frecuentes</a>
+            <a class="nav-link" href="contactenos.html">Contáctenos</a>
+          </div>
         </div>
-        <div id="plan2">
-          <h2 class="titulosH2">PLAN HOGAR</h2>
-        </div>
-        <div id="plan3">
-          <h2 class="titulosH2">PERSONALIZADO</h2>
-        </div>
-        <div id="plan1Des">
-          <p class="descripcion">El plan total ofrece una cobertura integral que comprende nuestros servicios en su totalidad para que se encuentre protegido en todo momento.</p>
-          <ul id="listaPlanes">
+      </div>
+    </nav>
+  </header>
+  <h1 class="titulosH1">Conozca nuestros planes</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-4 plan1">
+        <h2 class="text-white">PLAN TOTAL</h2>
+      </div>
+      <div class="col-4 plan2">
+        <h2 class="text-white">PLAN HOGAR</h2>
+      </div>
+      <div class="col-4 plan3">
+        <h2 class="text-white">PERSONALIZADO</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4 colClara">
+        <p class="descripcion">El plan total ofrece una cobertura integral que comprende nuestros servicios en su totalidad para que se encuentre protegido en todo momento.</p>
+          <ul class="listaPlanes">
             <li>Incluye seguro de vida personal, familiar, para tu casa y tu negocio.</li>
             <li>La protección es contra destrucción total, parcial o robo.</li>
             <li>Los electronicos respetan su precio original hasta 6 meses de vencida la garantía de fabrica.</li>
@@ -45,10 +57,10 @@
             <li>La póliza cubre todos los gastos de salud mental tras cualquier incidente que pueda ocurrir referido a robos, accidentes o perdidas.</li>
           </ul>
           <p class="precio">$5200 mensuales + IVA.</p>
-        </div>
-        <div id="plan2Des">
-          <p class="descripcion">El plan hogar ofrece una cobertura integral para tus seres queridos y tu hogar para que puedas vivir y viajar tranquilo.</p>
-          <ul id="listaPlanes">
+      </div>
+      <div class="col-4 colOscura">
+        <p class="descripcion">El plan hogar ofrece una cobertura integral para tus seres queridos y tu hogar para que puedas vivir y viajar tranquilo.</p>
+          <ul class="listaPlanes">
             <li>Incluye seguro de vida personal, familiar y para tu casa.</li>
             <li>La protección es contra destrucción total, parcial o robo.</li>
             <li>Los electronicos respetan su precio original hasta 6 meses de vencida la garantía de fabrica.</li>
@@ -58,28 +70,40 @@
             <li>La póliza cubre todos los gastos de salud mental tras cualquier incidente que pueda ocurrir referido a robos, accidentes o perdidas.</li>
           </ul>
           <p class="precio">$3500 mensuales + IVA.</p>
-        </div>
-        <div id="plan3Des">
-          <p class="descripcion">El plan personalizado ofrece una cobertura acorde a sus necesidades, ya sea si quiere proteger su vida, la de sus seres queridos objetos o lugares de valor determinados.</p>
-          <ul id="listaPlanes">
-            <li>Incluye seguro de vida personal obligatorio.</li>
-            <li>La protección es contra destrucción total, parcial o robo dependiendo de si es un bien mueble o inmueble.</li>
-            <li>Los electronicos respetan su precio original hasta 3 meses de vencida la garantía de fabrica.</li>
-            <li>Puede optar por proteger totalmente su casa, auto o negocio o hacerlo de manera parcial.</li>
-            <li>En caso de muerte o enfermedad todos los gastos serán cubiertos por nuestra empresa.</li>
-            <li>En caso de accidente nuestra firma le asignará un abogado de ser necesario.</li>
-            <li>La póliza cubre todos los gastos de salud mental tras cualquier incidente que pueda ocurrir referido a robos, accidentes o perdidas.</li>
-          </ul>
-          <p class="precio">Base de $2000 mensuales + IVA.</p>
+          </div>
+      <div class="col-4 colClara">
+        <p class=descripcion>El plan personalizado ofrece una cobertura acorde a sus necesidades, ya sea si quiere proteger su vida, la de sus seres queridos objetos o lugares de valor determinados.</p>
+        <ul class=listaPlanes>
+          <li>Incluye seguro de vida personal obligatorio.</li>
+          <li>La protección es contra destrucción total, parcial o robo dependiendo de si es un bien mueble o inmueble.</li>
+          <li>Los electronicos respetan su precio original hasta 3 meses de vencida la garantía de fabrica.</li>
+          <li>Puede optar por proteger totalmente su casa, auto o negocio o hacerlo de manera parcial.</li>
+          <li>En caso de muerte o enfermedad todos los gastos serán cubiertos por nuestra empresa.</li>
+          <li>En caso de accidente nuestra firma le asignará un abogado de ser necesario.</li>
+          <li>La póliza cubre todos los gastos de salud mental tras cualquier incidente que pueda ocurrir referido a robos, accidentes o perdidas.</li>
+        </ul>
+        <p class="precio">Base de $2000 mensuales + IVA.</p>
+      </div>
+      </div>
+    </div>
+
+  <footer>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand"><img src="../images/logo.png" class="img-responsive logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="#"><img src="../images/instagram.png" alt="Instagram de la empresa" class="ig"></a>
+            <a class="nav-link" href="#"><img src="../images/facebook.png" alt="Facebook de la empresa" class="fb"></a>
+            <a class="nav-link" href="#"><img src="../images/twitter.png" alt="Twitter de la empresa"  class="tw"></a>
+          </div>
         </div>
       </div>
-      <footer>
-        <nav id="navFooter">
-          <img src="../images/instagram.png" alt="Instagram de la empresa" class="ig">
-          <img src="../images/facebook.png" alt="Facebook de la empresa" class="fb">
-          <img src="../images/twitter.png" alt="Twitter de la empresa"  class="tw">
-          <p class="copyright">©Copyright Suárez César design.</p>
-        </nav>
-    </footer>
+    </nav>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

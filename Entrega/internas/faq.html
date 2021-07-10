@@ -5,36 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
-    <title>Escobedo Seguros S.A. Preguntas frecuentes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Escobedo Seguros S.A. Servicios</title>
     <link rel="stylesheet" href="../css/style.css"/>
 </head>
 <body>
   <header>
-    <nav id="headerGrid">
-        <ul id="ulNav">
-          <li id="linkImgPos"><img src="../images/logo.png" alt="Logo Aseguradora" id="logo"></li>
-          <li id="link"><a href="../index.html">Inicio</a></li>
-          <li id="link"><a href="servicios.html">Servicios</a></li>
-          <li id="link"><a href="planes.html">Planes</a></li>
-          <li id="link"><a href="faq.html">Preguntas Frecuentes</a></li>
-          <li id="link"><a href="contactenos.html"><input type="button" value="Contáctenos" class="botonHeader"></a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand"><img src="../images/logo.png" class="img-responsive logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            <a class="nav-link" href="servicios.html">Servicios</a>
+            <a class="nav-link" href="planes.html">Planes</a>
+            <a class="nav-link" href="faq.html">Preguntas frecuentes</a>
+            <a class="nav-link" href="contactenos.html">Contáctenos</a>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
-      <!--Este FAQ contiene una bella imagen positiva a la izquierda con respuestas generales hacia la derecha-->
-      <!--Hay 2 clases de listas debido a que a las preguntas se le da un estilo diferenciado para claridad de lectura-->
-        <div id=faqFlex>
-          <div>
-          <img src="../images/faq_1.jpeg" alt="imagen faq" class=imgFaq>
-          </div>
-          <div class=lista>
+  <div class="container-fluid g-0">
+    <div class="row">
+      <div class="col-6">
+        <img src="../images/faq_1.jpeg" alt="imagen faq" class=imgFaq>
+      </div>
+      <div class="col-6">
         <ul class="listaPreguntas">
           <li class="liFaq"><h1 class="titulosH1">Sabemos que tiene preguntas y nosotros tenemos respuestas</h1></li>
           <li class="liFaqPreg">¿Cuanto tarda en estar activo mi seguro?</li>
           <li class="liFaq">Su seguro estará activo 72hs de recibido el pago. En el caso de los seguros de vida e incendio solo cobrará 60% los primeros 6 meses.</li>
           <li class="liFaqPreg">¿Es obligatorio poner el seguro a nombre de un tercero?</li>
-          <li class="liFaq">Este requisito solo es necesario en el seguro de vida o si tiene conyugue o socio en el seguro de hogar o negocio.</li>
+          <li class="liFaq">Este requisito solo es necesario en el seguro de vida o si tiene conyuge o socio en el seguro de hogar o negocio.</li>
           <li class="liFaqPreg">¿Qué pasa si me atraso con el pago de mi seguro?</li>
           <li class="liFaq">Desde el vencimiento la poliza te cubrirá por 15 días, la misma pierde validez hasta la regularización de la deuda.</li>
           <li class="liFaqPreg">¿Qué sucede en el caso de muerte dudosa en el seguro de vida?</li>
@@ -48,15 +56,26 @@
           <li class="liFaqPreg">¿Puedo darme de baja en cualquier momento?</li>
           <li class="liFaq">Sí. Sin embargo la póliza estará vigente hasta el final de lo ya abonado.</li>
         </ul>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand"><img src="../images/logo.png" class="img-responsive logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="#"><img src="../images/instagram.png" alt="Instagram de la empresa" class="ig"></a>
+            <a class="nav-link" href="#"><img src="../images/facebook.png" alt="Facebook de la empresa" class="fb"></a>
+            <a class="nav-link" href="#"><img src="../images/twitter.png" alt="Twitter de la empresa"  class="tw"></a>
           </div>
         </div>
-      <footer>
-        <nav id="navFooter">
-          <img src="../images/instagram.png" alt="Instagram de la empresa" class="ig">
-          <img src="../images/facebook.png" alt="Facebook de la empresa" class="fb">
-          <img src="../images/twitter.png" alt="Twitter de la empresa"  class="tw">
-          <p class="copyright">©Copyright Suárez César design.</p>
-        </nav>
-    </footer>
+      </div>
+    </nav>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
