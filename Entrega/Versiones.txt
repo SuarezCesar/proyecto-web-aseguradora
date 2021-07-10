@@ -1,0 +1,45 @@
+Este archivo compila las versiones y problematicas encontradas en cada una de sus iteraciones:
+
+0.1.0:
+------
+Se crea index.html y se le agregan unas pocas reglas básicas de CSS. No ocurren inconvenientes.
+
+0.3.0:
+------
+Se crean las páginas internas y se le agregan unas pocas reglas básicas de CSS + Linkeo entre sí. No ocurren inconvenientes.
+
+0.5.0:
+------
+Se crean los contenidos iniciales de la página, se aplica flexbox y grid regulares. Se aplica CSS un tanto más complejo y algunas animaciones. No ocurren inconvenientes.
+
+0.7.0:
+------
+Se aplica Bootstrap al home del sitio. El resto de las páginas mantienen su formato.
+Bugs:
+La misma semana que se comienza a utilizar Bootstrap en la clase hay un release nuevo (5.0.2 - 22 de junio, Bootstrap 5.0.0 es implementado el 5 de mayo).
+Dado el enorme cambio que hay de Bootstrap 5.0.X respecto de su versión anterior toda guía, tutorial o documentación en general no funciona.
+Esto genera que la página sea responsive pero tenga ciertos problemas.
+Se diseña una historia de color de azules, celestes y grises serioes debido a que el negocio es una aseguradora y su logo es azul. (Logo hecho por un amigo diseñador)
+
+0.9.1 [Release actual]:
+-----------------------
+Se crea documentación del proyecto y versionado.
+Todo el sitio es reconstruido de 0 utilizando 0 (Incluyendo Extends y Mixins en lugares donde es posible).
+Se comienza a utilizar medidas Rem donde es intuitivo y comprensible para el estudiante.
+Todas las páginas son creadas de 0, mayormente utilizando Bootstrap e integramente SASS.
+Se intenta moduralizar la mayor cantidad posible de CSS y utilizar la menor cantidad posible de código. 
+Se anida el código posible o evidente mientras se intenta familiarizar con el uso de SASS.
+El manejo de SASS, Nodemon y Bootstrap se siente natural.
+
+BUGS - 0.9.1
+------------
+Varios problemas de la versión 0.7.0 fueron solucionados, sin embargo:
+->Debido al cambio de versión de bootstrap y la poca claridad de la documentación para un novato no se ha podido encontrar la nueva forma de recolumnar el contenido en pantallas XS (El resto de las resoluciones funciona correctamente). Prioridad para la próxima entrega: alta. - Se solicita ayuda del/a tutor/a para poder resolverlo.
+->El mismo problema anterior hace que todas las páginas hagan un resizing apropiado y tomen varias de sus propiedades XS sin embargo:
+En index.html los objetos se alinean hacia la izquierda. Algunos se desordenan.
+->En servicios.html y faq.html las imagenes en lugar de ponerse sobre el texto se contraen antiesticamente (Pero la página es funcional y legible).
+->En planes.html la página se va rompiendo lentamente, hay multiples variantes de texto que deben investigarse para entender qué causa el problema.
+->En contactenos.html todo funciona perfectamente excepto que al poner el tamaño a XS el padding del elemento no disminuye y deja mal ubicado el formulario (pero funciona)
+Además, el botón de reiniciar el formulario no funciona (Se utilizó 100% las configuración recomendada por bootstrap)
+
+De poder solucionar el problema de poner una columna sobre otro y centrarlas el sitio en XS deberia quedar el proyecto en muy buenas condiciones. Necesito ayuda con esto.

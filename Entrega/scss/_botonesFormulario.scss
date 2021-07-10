@@ -1,0 +1,17 @@
+%botones{
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 2%;
+    padding-right: 2%;
+    color:whitesmoke;
+}
+
+.btnEnviar{
+    @extend %botones;
+    background-color: rgb(30, 40, 184);
+}
+
+.btnReiniciar{
+    @extend %botones;
+    background-color: royalblue;
+}

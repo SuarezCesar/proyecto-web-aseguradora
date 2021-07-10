@@ -1,0 +1,20 @@
+Autor: Suárez César Gabriel
+Para: Desarrollo Web Camada 16600 - Coderhouse 2021
+Profesor: Maximiliano Torreblanca
+Tutora: Angelica Molero
+Capacidades del estudiante al encarar el curso:
+Experiencia previa en diseño: nula.
+Experiencia previa en organización de la información: media.
+Inglés: avanzado/experto.
+Conocimientos de programación: Universitarios iniciales (C). Nunca relacionados con front-end. Experiencia laboral en IT pero nunca en desarrollo.
+
+El proyecto actual simula la página de una pequeña PyME que intenta comenzar como aseguradora tras tener éxito en negocios anteriores.
+El concepto general de la página es que el usuario se informe de los planes y servicios, gane confianza en la marca y decida llamar, visitar la sucursal o utilizar el formulario de contacto.
+El home ofrece una pequeña descripción de la empresa, locación y clientes (Simulados) de los servicios.
+El usuario podrá en el sitio:
+-Ingresar a una página con planes detallando las caracteristicas que cada uno ofrece + una imagen que sea inspiradora o haga referencia al servicio.
+-Podrá consultar a lineas generales los costos de los planes y qué incluye sabiendo que puede acceder a un plan personalizado.
+-Tendrá una sección de preguntas y respuestas para poder disipar sus dudas y ganar confianza en la empresa.
+-Contará con un formulario de contacto para hacer las consultas que requiera, el mismo además contempla la inclusión dando aún más confianza a los clientes.
+
+El proyecto está mayormente montado utilizando Bootstrap 5.0.2 y SASS. Además cuenta con un txt con todo el versionado y los cambios realizados + bugs encontrados.

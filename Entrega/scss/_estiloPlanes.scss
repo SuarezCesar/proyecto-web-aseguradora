@@ -1,0 +1,56 @@
+@mixin estiloTitPlanes($color){
+    height: 60px;
+    background-color: $color;
+    text-align: justify;
+    text-align: center;
+    padding-top: 0.8rem;
+}
+
+  .plan1{
+   @include estiloTitPlanes ( rgb(43, 106, 158))
+  }
+  
+  .plan2{
+   @include estiloTitPlanes (rgb(76, 128, 172))  
+  }
+  
+  .plan3{
+    @include estiloTitPlanes (rgb(57, 126, 182))
+  }
+
+  .descripcion{
+    padding-top: 2%;
+    font-size: 23px;
+    color: #1d1e1f;
+    font-weight: bold;
+    text-align: justify;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 5%;
+    height: 12rem;
+  }
+  
+  .listaPlanes{
+    font-size: 20px;
+    list-style-position: inside;
+    margin-left: 10px;
+    height: 35rem;
+  }
+  
+  .precio{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: justify;
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-content: center;
+    padding-top: 10%;
+  }
+
+  .colClara{
+      background-color: #DEDFDF;
+  }
+
+  .colOscura{
+      background-color: #BFBFBF;
+  }
