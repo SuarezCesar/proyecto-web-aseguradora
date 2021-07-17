@@ -21,7 +21,7 @@ Dado el enorme cambio que hay de Bootstrap 5.0.X respecto de su versión anterio
 Esto genera que la página sea responsive pero tenga ciertos problemas.
 Se diseña una historia de color de azules, celestes y grises serioes debido a que el negocio es una aseguradora y su logo es azul. (Logo hecho por un amigo diseñador)
 
-0.9.1 [Release actual]:
+0.9.1 
 -----------------------
 Se crea documentación del proyecto y versionado.
 Todo el sitio es reconstruido de 0 utilizando 0 (Incluyendo Extends y Mixins en lugares donde es posible).
@@ -43,3 +43,10 @@ En index.html los objetos se alinean hacia la izquierda. Algunos se desordenan.
 Además, el botón de reiniciar el formulario no funciona (Se utilizó 100% las configuración recomendada por bootstrap)
 
 De poder solucionar el problema de poner una columna sobre otro y centrarlas el sitio en XS deberia quedar el proyecto en muy buenas condiciones. Necesito ayuda con esto.
+
+0.9.3 [Release actual]:
+-----------------------
+El release es identico a 0.9.1 (Incluyendo bugs) solo que ha habido algunos agregados:
+-Se pone un <title> diferente a cada página para mejorar el SEO
+-Se agrega un meta description a cada página con un texto particular y especifico para cada una para mejorar su rendimiento
+-Se agregan keywords a cada página del sitio intentando relacionarlas con el contenido de cada página individual del sitio. Se utiliza el nombre propio de fantasía del sitio asumiendo que en algún momento pueden existir busquedas del lugar como si de una empresa famosa o de renombre se tratase.
